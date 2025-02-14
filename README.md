@@ -19,5 +19,16 @@ pip install -r Requirements.txt
 ## Dependencies
 Refer to `requirements.txt` for required libraries.
 
+
+Download the Transformer model:
+```python
+from transformers import BlenderbotForConditionalGeneration, BlenderbotTokenizer
+model_name = "facebook/blenderbot-400M-distill"
+tokenizer = BlenderbotTokenizer.from_pretrained(model_name)
+model = BlenderbotForConditionalGeneration.from_pretrained(model_name)
+```
+Download Link
+https://huggingface.co/facebook/blenderbot-400M-distill/tree/main
+
 ## License
 MIT License
